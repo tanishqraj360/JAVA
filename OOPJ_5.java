@@ -9,8 +9,8 @@ class Shape {
 }
 
 class Circle extends Shape {
-    @Override
-    public void draw() {
+    @Override // Override not required
+    public void draw() { // Override anotation gives error if the superclass is not overriden
         System.out.println("Drawing a Circle");
     }
 
