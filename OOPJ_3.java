@@ -38,5 +38,7 @@ public class OOPJ_3 {
 
         System.out.println("After hike: ");
         System.out.println("Employee Salary: " + e1.salary);
+
+        sc.close();
     }
 }

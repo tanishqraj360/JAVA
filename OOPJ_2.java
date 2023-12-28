@@ -15,11 +15,14 @@ public class OOPJ_2 {
         }
 
         for (int i = 0; i < n; i++) {
-            System.out.print("row "+i+" : ");
+            System.out.print("row " + i + " : ");
             for (int j = 0; j < n; j++) {
-                System.out.print(mat[i][j]+"\t");
+                System.out.print(mat[i][j] + "\t");
             }
             System.out.println();
+
         }
+
+        sc.close();
     }
 }
