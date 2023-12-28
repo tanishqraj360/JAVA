@@ -1,3 +1,5 @@
+//Develop a JAVA program to add TWO matrices of suitable order N
+
 import java.util.Scanner;
 
 public class OOPJ_2 {

@@ -7,7 +7,7 @@ All VTU programs for III-Sem OOPS in JAVA
     b) Develop a JAVA program to implement basic arithmetic operations.
     c) Develop a JAVA program to count and display the number of arguments.
 
-2. Develop a JAVA program to add TWO matrices of suitable order N (The value of N should be read from command line arguments).
+2. Develop a JAVA program to add TWO matrices of suitable order N.
 
 3.  A class called Employee, which models an employee with an ID, name and salary, is designed as shown in the following class diagram. The method raiseSalary (percent) increases the salary by the given percentage. Develop the Employee class and suitable main method for demonstration.
 
