@@ -29,14 +29,17 @@ public class OOPJ_3 {
         name = sc.next();
         System.out.println("Enter Employee Salary: ");
         salary = sc.nextDouble();
+        System.out.println("-----------------------------");
+        System.out.println();
 
         Employee e1 = new Employee(id, name, salary);
 
-        System.out.println("Employee Id: " + e1.id + " Name: " + e1.name + " Salary: " + e1.salary);
+        System.out.println("Employee Id: " + e1.id + "\nName: " + e1.name + "\nSalary: " + e1.salary);
 
-        e1.raiseSalary(5);
+        System.out.println("\nEnter salary hike: ");
+        e1.raiseSalary(sc.nextInt());
 
-        System.out.println("After hike: ");
+        System.out.println("After hike\n");
         System.out.println("Employee Salary: " + e1.salary);
 
         sc.close();
