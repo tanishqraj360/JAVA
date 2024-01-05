@@ -15,14 +15,18 @@ class Student {
 
 class UGstudent extends Student {
 
-    UGstudent(int USN, String name, int age) {
-        super(USN, name, age);
-    }
-
     int semester;
     double fees;
     float cgpa;
     double stipend;
+
+    UGstudent(int USN, String name, int age, int semester, double fees, float cgpa, double stipend) {
+        super(USN, name, age);
+        this.semester = semester;
+        this.fees = fees;
+        this.cgpa = cgpa;
+        this.stipend = stipend;
+    }
 
     void display() {
         System.out.println("Name: " + name + " USN: " + USN + " Age: " + age);
@@ -41,16 +45,16 @@ public class viva2 {
         System.out.println("Enter Age: ");
         int age = sc.nextInt();
 
-        UGstudent s1_UG = new UGstudent(USN, name, age);
-
         System.out.println("Enter Semester: ");
-        s1_UG.semester = sc.nextInt();
+        int semester = sc.nextInt();
         System.out.println("Enter fees: ");
-        s1_UG.fees = sc.nextDouble();
+        double fees = sc.nextDouble();
         System.out.println("Enter CGPA: ");
-        s1_UG.cgpa = sc.nextFloat();
+        float cgpa = sc.nextFloat();
         System.out.println("Enter Stipend: ");
-        s1_UG.stipend = sc.nextDouble();
+        double stipend = sc.nextDouble();
+
+        UGstudent s1_UG = new UGstudent(USN, name, age, semester, fees, cgpa, stipend);
 
         System.out.println("\nStudent Details:");
         s1_UG.display();
