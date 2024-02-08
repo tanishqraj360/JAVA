@@ -8,24 +8,32 @@ public class OOPJ_2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter order of matrix: ");
         n = sc.nextInt();
-        int mat[][] = new int[n][n];
+        int mat1[][] = new int[n][n];
+        int mat2[][] = new int[n][n];
+        int mats[][] = new int[n][n];
 
-        System.out.println("Enter elements of matrix: ");
+        System.out.println("Enter elements of first matrix: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                mat[i][j] = sc.nextInt();
+                mat1[i][j] = sc.nextInt();
             }
         }
 
+        System.out.println("Enter elements of second matrix: ");
         for (int i = 0; i < n; i++) {
-            System.out.print("row " + i + " : ");
             for (int j = 0; j < n; j++) {
-                System.out.print(mat[i][j] + "\t");
+                mat2[i][j] = sc.nextInt();
             }
-            System.out.println();
-
         }
 
+        System.out.println("Sum of two matrix: ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                mats[i][j] = mat1[i][j] + mat2[i][j];
+                System.out.print(mats[i][j] + " ");
+            }
+            System.out.println("");
+        }
         sc.close();
     }
 }
