@@ -30,6 +30,7 @@ public class OOPJ_3 {
 
         System.out.println("Enter Employee Id: ");
         id = sc.nextInt();
+        sc.nextLine();
         System.out.println("Enter Employee name: ");
         name = sc.next();
         System.out.println("Enter Employee Salary: ");
