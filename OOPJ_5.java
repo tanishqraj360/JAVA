@@ -51,15 +51,20 @@ class Square extends Shape {
 
 public class OOPJ_5 {
     public static void main(String[] args) {
-        Shape[] shapes = new Shape[3];
-        shapes[0] = new Circle();
-        shapes[1] = new Triangle();
-        shapes[2] = new Square();
+        Circle cir = new Circle();
+        Triangle tri = new Triangle();
+        Square sq = new Square();
 
-        for (Shape shape : shapes) {
-            shape.draw();
-            shape.erase();
-            System.out.println();
-        }
+        cir.draw();
+        cir.erase();
+        System.out.println();
+
+        tri.draw();
+        tri.erase();
+        System.out.println();
+
+        sq.draw();
+        sq.erase();
+
     }
 }
