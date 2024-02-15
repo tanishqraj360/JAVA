@@ -13,7 +13,7 @@ class ThreadExample implements Runnable {
         for (int i = 0; i < 5; i++) {
             System.out.println(threadName + ": " + i);
             try {
-                Thread.sleep(500); // Sleep for 500 milliseconds
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 System.out.println(threadName + " interrupted.");
             }
@@ -23,8 +23,8 @@ class ThreadExample implements Runnable {
 
 public class OOPJ_9 {
     public static void main(String[] args) {
-        ThreadExample r1 = new ThreadExample("Thread-1");
-        ThreadExample r2 = new ThreadExample("Thread-2");
+        ThreadExample r1 = new ThreadExample("Thread - 1");
+        ThreadExample r2 = new ThreadExample("Thread - 2");
 
         Thread t1 = new Thread(r1);
         Thread t2 = new Thread(r2);
