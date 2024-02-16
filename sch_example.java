@@ -10,24 +10,31 @@ class Counter {
     }
 }
 
+class Thread1 extends Thread {
+    public void start(Counter counter) {
+        for (int i = 0; i < 1000; i++) {
+            counter.increment();
+        }
+    }
+}
+
+class Thread2 extends Thread {
+    public void start(Counter counter) {
+        for (int i = 0; i < 1000; i++) {
+            counter.increment();
+        }
+    }
+}
+
 public class sch_example {
     public static void main(String[] args) throws InterruptedException {
         Counter counter = new Counter();
 
-        Thread t1 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
-                counter.increment();
-            }
-        });
+        Thread1 t1 = new Thread1();
+        Thread2 t2 = new Thread2();
 
-        Thread t2 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
-                counter.increment();
-            }
-        });
-
-        t1.start();
-        t2.start();
+        t1.start(counter);
+        t2.start(counter);
 
         t1.join();
         t2.join();
