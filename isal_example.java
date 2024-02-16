@@ -19,16 +19,5 @@ public class isal_example {
         System.out.println(t2.isAlive());
         t2.start();
         System.out.println(t2.isAlive());
-
     }
-
 }
-
-/*
- * isAlive() is a pre-defined method of thread class through which we can verify
- * whether a thread isAlive or not.
- * 
- * i) if thread isAlive and it will return true otherwise false
- * ii)if we use isAlive method before start method then it will print false but
- * after start method it will print true
- */
