@@ -9,6 +9,12 @@ class MyThread implements Runnable {
 
     public void run() {
         System.out.println("Child thread is running...");
+        try {
+            Thread.sleep(500);
+            System.out.println("Child thread is terminating...");
+        } catch (InterruptedException e) {
+            System.out.println("Child thread interrupted.");
+        }
     }
 }
 
@@ -19,5 +25,11 @@ public class OOPJ_10 {
         t1.start();
 
         System.out.println("Main thread is running...");
+        try {
+            Thread.sleep(500);
+            System.out.println("Main thread is terminating...");
+        } catch (InterruptedException e) {
+            System.out.println("Main thread is interrupted.");
+        }
     }
 }
