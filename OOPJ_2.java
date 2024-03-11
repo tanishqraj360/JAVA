@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class OOPJ_2 {
     public static void main(String[] args) {
-        int n;
+        int n = Integer.parseInt(args[0]);
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter order of matrix: ");
-        n = sc.nextInt();
+
         int mat1[][] = new int[n][n];
         int mat2[][] = new int[n][n];
         int mats[][] = new int[n][n];
